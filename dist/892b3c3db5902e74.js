@@ -1,0 +1,1 @@
+const words=["develop apps","shape Metaverse","design in 3D","build websites","create things"];let cursor=gsap.to(".cursor",{opacity:0,ease:"power2.inOut",repeat:-1}),masterTL=gsap.timeline({repeat:-1});words.forEach((e=>{let t=gsap.timeline({repeat:1,yoyo:!0,repeatDelay:2});t.to(".text",{duration:1,text:e}),masterTL.add(t)}));
